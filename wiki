@@ -1,8 +1,5 @@
 #!/bin/sh
+ 
+p=$(echo | dmenu | sed -e 's/ /_/g')
 
-w=$(echo | dmenu) 
-p=$(echo "$w" | sed -e 's/ /_/g')
-
-wget -r https://en.wikipedia.org/api/rest_v1/page/pdf/$p -P /tmp
-
-zathura /tmp/en.wikipedia.org/*/*/*/pdf/$p 
+wget -r https://en.wikipedia.org/api/rest_v1/page/pdf/$p -P /tmp && zathura /tmp/en.wikipedia.org/*/*/*/pdf/$p 
