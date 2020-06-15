@@ -1,2 +1,2 @@
 #!/bin/sh
-HOME="$HOME/sys/local" $(which steam) "$@"
+HOME="$HOME/sys/local" /bin/steam "$@"

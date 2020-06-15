@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# A simple script that allows you to view an image on your clipboard 
+p=/tmp/image
+xclip -selection clipboard -t image/png -o > $p  && sxiv $p && rm $p 
+
