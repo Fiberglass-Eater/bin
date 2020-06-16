@@ -1,0 +1,5 @@
+#!/bin/sh
+
+#List avalible networks to connect to
+
+iwctlstation wlp2s0 get-networks
