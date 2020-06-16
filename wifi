@@ -1,0 +1,5 @@
+#!/bin/sh
+
+#A series of commands for easy use of common iwd commands, such as network scanning and connecting
+
+iwctl --passphrase=$2 station wlp2s0 connect $1
