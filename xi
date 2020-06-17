@@ -45,7 +45,7 @@ elif [ "$(whoami)" != root ]; then
 	SUDO='su root -c '\''"$@"'\'' -- -'
 fi
 
-$SUDO xbps-install $ADDREPO -S "$@"
+$SUDO xbps-install $ADDREPO -S "$@" && $SUDO makewhatis /usr/share/man
 if [ $? -eq 16 ]; then
 	$SUDO xbps-install -u xbps
 	$SUDO xbps-install $ADDREPO -S "$@"
