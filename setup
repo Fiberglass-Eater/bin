@@ -5,7 +5,7 @@
 #Update and install packages 
 xbps-install -Suy && xbps-install -Suy
 xbps-install void-repo-nonfree -y
-xbps-install -y curl neovim xorg sx firefox gcc clang lf sxiv mpv maim font-tamzen font-awesome bluez zsh pulseaudio ConsoleKit2 cmake dbus lxappearance neofetch ninja nodejs opendoas pulsemixer syncthing sxhkd texlive2020-bin thunderbird xwallpaper alsa-plugins-pulseaudio alsa-utils zathura zathura-pdf-poppler youtube-dl python3 unzip wine slock rustup picom pandoc antibody
+xbps-install -y curl neovim xorg sx firefox gcc clang lf sxiv mpv maim font-tamzen font-awesome bluez zsh pulseaudio cmake dbus lxappearance neofetch ninja nodejs opendoas pulsemixer syncthing sxhkd texlive2020-bin thunderbird xwallpaper alsa-plugins-pulseaudio alsa-utils zathura zathura-pdf-poppler youtube-dl python3 unzip wine slock rustup picom pandoc antibody
 
 
 #Make dirs and set variables
