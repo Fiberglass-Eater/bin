@@ -1,0 +1,28 @@
+#!/bin/sh
+
+#A script to quickly install packages and do setup given a new install of void linux. Should only be used by others for refrence.
+
+#Update and install packages 
+xbps-install -Suy && xbps-install -Suy
+xbps-install void-repo-nonfree -y
+xbps-install -y curl neovim xorg sx firefox gcc clang lf sxiv mpv maim font-tamzen font-awesome bluez zsh pulseaudio ConsoleKit2 cmake dbus lxappearance neofetch ninja nodejs opendoas pulsemixer syncthing sxhkd texlive2020-bin thunderbird xwallpaper alsa-plugins-pulseaudio alsa-utils zathura zathura-pdf-poppler youtube-dl python3 unzip wine slock rustup picom pandoc antibody
+
+
+#Make dirs and set variables
+usermod -s /bin/zsh dom
+mkdir ~/sys
+echo export ZDOTDIR="$HOME/sys/config/zsh" >> /etc/profile
+cd sys
+git clone https://github.com/MrLazerbean/config
+cd ~/src
+git clone https://github.com/MrLazerbean/dwm
+cd ~/
+git clone https://github.com/MrLazerbean/bin
+antibody bundle < $XDG_CONFIG_DIR/zsh/zsh_plugins.txt > $XDG_CONFIG_DIR/zsh/zsh_plugins.sh
+sh -c 'curl -fLo $XDG_DATA_HOME/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+mkdir ~/src
+echo export PATH="$HOME/bin:/opt/texlive/2020/bin/x86_64-linux:$HOME/src/ungoogled-chromium_80.0.3987.149-2.1_linux:$PATH" >> $HOME/sys/config/zsh/.zprofile
+ln -s /mnt ~/
+ln -s /tmp ~/
+
