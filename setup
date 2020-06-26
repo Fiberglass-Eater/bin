@@ -24,7 +24,7 @@ git clone https://github.com/MrLazerbean/bin
 antibody bundle < /home/dom/sys/config/zsh/zsh_plugins.txt > /home/dom/sys/config/zsh/zsh_plugins.sh
 sh -c 'curl -fLo /home/dom/sys/local/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-echo export PATH="$HOME/bin:/opt/texlive/2020/bin/x86_64-linux:$HOME/src/ungoogled-chromium_80.0.3987.149-2.1_linux:$PATH" >> $HOME/sys/config/zsh/.zprofile
+echo export PATH="$HOME/bin:/opt/texlive/2020/bin/x86_64-linux:$HOME/src/ungoogled-chromium_80.0.3987.149-2.1_linux:$PATH" >> /home/dom/sys/config/zsh/.zprofile
 ln -s /mnt /home/dom
 ln -s /tmp /home/dom
 
