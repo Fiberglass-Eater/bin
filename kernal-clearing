@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#Script to remove all void kernals exept for the two most recent non booted ones. 
+
+vkpurge list > /tmp/kernal-list
+sed -i '$d' /tmp/kernal-list
+k=$(cat /tmp/kernal-list | xargs)
+rm /tmp/kernal-list
+vkpurge rm $k
