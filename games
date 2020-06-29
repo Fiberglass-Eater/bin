@@ -1,2 +1,5 @@
 #!/bin/sh
+
+# Wrapper for Steam to respect xdg data dirs
+
 HOME="$HOME/sys/local" /bin/steam "$@"
