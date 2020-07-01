@@ -1,2 +1,2 @@
 #!/bin/sh
-HOME="$HOME/sys/local" $(which audacity)  "$@"
+HOME="$XDG_DATA_HOME" $(which audacity)  "$@"

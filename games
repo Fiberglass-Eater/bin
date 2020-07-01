@@ -2,4 +2,4 @@
 
 # Wrapper for Steam to respect xdg data dirs
 
-HOME="$HOME/sys/local" /bin/steam "$@"
+HOME="$XDG_DATA_HOME" /bin/steam "$@"

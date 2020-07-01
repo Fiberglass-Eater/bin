@@ -1,2 +1,2 @@
 #!/bin/sh
-HOME="$HOME/sys/local" $(which firefox) "$@"
+HOME="$XDG_DATA_HOE" $(which firefox) "$@"

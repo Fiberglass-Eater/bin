@@ -1,2 +1,2 @@
 #!/bin/sh
-HOME="$HOME/sys/local" $(which thunderbird) "$@"
+HOME="$XDG_DATA_HOME" $(which thunderbird) "$@"

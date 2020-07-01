@@ -1,5 +1,5 @@
 #!/bin/sh
 
-#Yes I did steal this idea for Luke Smith sue me
+#Yes I did steal this idea from Luke Smith sue me
 
 mpv --loop-file=inf "https://radar.weather.gov/lite/N0R/BUF_loop.gif"
