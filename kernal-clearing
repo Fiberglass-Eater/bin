@@ -6,4 +6,4 @@ vkpurge list > /tmp/kernal-list
 sed -i '$d' /tmp/kernal-list
 k=$(cat /tmp/kernal-list | tr '\n' ' ' << /tmp/kernal-list)
 rm /tmp/kernal-list
-vkpurge rm $k || echo "There are no outdated kernals to remove"
+vkpurge rm $k 
